@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
+    import 'screens/home_screen.dart';
 
-void main() => runApp(const MyApp());
+    void main() {
+      runApp(MyApp());
+    }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Say Hello',
-      home: Scaffold(
-        appBar: AppBar(title: const Text('Say Hello')),
-        body: const Center(
-          child: Text('Hello!', style: TextStyle(fontSize: 32)),
-        ),
-      ),
-    );
-  }
-}
+    class MyApp extends StatelessWidget {
+      @override
+      Widget build(BuildContext context) {
+        return MaterialApp(
+          title: 'Precision Machine Works',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+            visualDensity: VisualDensity.adaptivePlatformDensity,
+          ),
+          home: HomeScreen(),
+        );
+      }
+    }
