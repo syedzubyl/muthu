@@ -74,8 +74,8 @@ class _ProductsSectionWidgetState extends State<ProductsSectionWidget> {
       child: ElevatedButton(
         onPressed: () => _onFilterSelected(filter),
         style: ElevatedButton.styleFrom(
-          primary: isSelected ? Colors.blue[600] : Colors.grey[200], // Conditional background color
-          onPrimary: isSelected ? Colors.white : Colors.grey[800], // Conditional text color
+          foregroundColor: isSelected ? Colors.white : Colors.grey[800],
+          backgroundColor: isSelected ? Colors.blue[600] : Colors.grey[200], // Conditional text color
           padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10), // px-4 py-2 (approx)
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(4), // rounded-md
@@ -88,7 +88,7 @@ class _ProductsSectionWidgetState extends State<ProductsSectionWidget> {
           text,
           style: TextStyle(
             fontSize: 14, // text-sm
-            fontWeight: FontWeight.medium, // font-medium
+            fontWeight: FontWeight.w500, // font-medium
           ),
         ),
       ),

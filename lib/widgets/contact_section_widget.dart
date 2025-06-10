@@ -134,8 +134,7 @@ class _ContactSectionWidgetState extends State<ContactSectionWidget> {
                         // TODO: Implement form submission logic
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.blue[600], // bg-blue-600
-                        onPrimary: Colors.white, // text-white
+                        foregroundColor: Colors.white, backgroundColor: Colors.blue[600], // text-white
                         padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12), // px-6 py-3 (approx)
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8), // rounded-lg
@@ -146,7 +145,7 @@ class _ContactSectionWidgetState extends State<ContactSectionWidget> {
                         'Submit Quote Request',
                         style: TextStyle(
                           fontSize: 16, // text-sm (approx)
-                          fontWeight: FontWeight.semibold, // font-semibold
+                          fontWeight: FontWeight.w600, // font-semibold
                         ),
                       ),
                     ),

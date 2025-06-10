@@ -172,8 +172,8 @@ class _TestimonialsSectionWidgetState extends State<TestimonialsSectionWidget> {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          primary: isSelected ? Colors.blue[600] : Colors.white, // Conditional background color
-          onPrimary: isSelected ? Colors.white : Colors.grey[800], // Conditional text color
+          foregroundColor: isSelected ? Colors.white : Colors.grey[800],
+          backgroundColor: isSelected ? Colors.blue[600] : Colors.white, // Conditional text color
           shape: CircleBorder(
             side: BorderSide(
               color: isSelected ? Colors.blue[600]! : Colors.grey[400]!, // Conditional border color
@@ -188,7 +188,7 @@ class _TestimonialsSectionWidgetState extends State<TestimonialsSectionWidget> {
                 pageNumber!.toString(),
                 style: TextStyle(
                   fontSize: 14, // text-sm
-                  fontWeight: FontWeight.medium, // font-medium
+                  fontWeight: FontWeight.w500, // font-medium
                 ),
               ),
       ),

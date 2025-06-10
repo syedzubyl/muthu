@@ -47,8 +47,7 @@ class HeroSectionWidget extends StatelessWidget {
                       // TODO: Implement Get a Quote action
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.blue[600], // bg-blue-600
-                      onPrimary: Colors.white, // text-white
+                      foregroundColor: Colors.white, backgroundColor: Colors.blue[600], // text-white
                       padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16), // px-8 py-6
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8), // rounded-lg
@@ -58,7 +57,7 @@ class HeroSectionWidget extends StatelessWidget {
                       'Get a Quote',
                       style: TextStyle(
                         fontSize: 18, // text-lg
-                        fontWeight: FontWeight.semibold, // font-semibold
+                        fontWeight: FontWeight.w600, // font-semibold
                       ),
                     ),
                   ),
